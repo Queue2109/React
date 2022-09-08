@@ -1,0 +1,26 @@
+How to start a new app:
+    npx create-react-app my-app
+    cd my-app
+    npm start
+
+
+function App() {
+  return (
+    <div className="App">
+      Hello
+    </div> //=> it actually translates as React.createElement('div', {className='App'}, 'Hello');
+  );
+}
+
+react components:
+- a function that returns jsx or
+- a js class that has a render method
+
+what makes a return of a function a react component is that it translates as React.createElement(blablabla). if you return just {}, there will be an error
+
+WORKING WITH MULTIPLE COMPONENTS 
+make a new folder and creat a js and css file for a component. 
+import it to the main App.js and use it as <Component/>
+
+React is not a self refresh/self update kind of thing, so you need to tell it when to update something
+
